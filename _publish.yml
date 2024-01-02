@@ -1,0 +1,4 @@
+- source: project
+  quarto-pub:
+    - id: 969b5d84-e8fa-417b-aea8-d779fa136f2e
+      url: 'https://aborruso.quarto.pub/sample'

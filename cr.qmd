@@ -1,0 +1,7 @@
+# CR
+
+See [lorem @sec-lorem-ipsum]
+
+See [lorem -@sec-lorem-ipsum]
+
+See lorem @sec-lorem-ipsum
