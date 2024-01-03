@@ -1,3 +1,11 @@
+---
+format:
+  html:
+    toc: false
+bread-crumbs: false
+page-navigation: false
+---
+
 # Introduction
 
 This is a book created from markdown and executable code.

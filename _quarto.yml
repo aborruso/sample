@@ -6,11 +6,15 @@ book:
   author: "Norah Jones"
   date: "1/2/2024"
   chapters:
-    - index.qmd
-    - intro.qmd
-    - cr.qmd
-    - summary.qmd
-    - references.qmd
+    - part: Lorem
+      chapters:
+        - index.qmd
+        - intro.qmd
+    - part: Ipsum
+      chapters:
+        - cr.qmd
+        - summary.qmd
+        - references.qmd
 
 bibliography: references.bib
 
