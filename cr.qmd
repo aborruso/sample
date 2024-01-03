@@ -1,7 +1,35 @@
 # CR
 
-See [lorem @sec-lorem-ipsum]
+## Sample section {#sec-lorem-ipsum-this}
 
-See [lorem -@sec-lorem-ipsum]
+This section is associated with `#sec-lorem-ipsum-this` label.
 
-See lorem @sec-lorem-ipsum
+### Suppress cross-reference prefix
+
+<br>If write `see @sec-lorem-ipsum-this` it will produce "see @sec-lorem-ipsum-this".
+
+To suppress cross-reference prefix prepend `-` before `@`, like so `[-@citation]`, will suppress default prefix, e.g. `[-@sec-lorem-ipsum-this]` will produce just `2.1` (or whatever number this section happens to be) without `Section` prefix:
+
+```{.markdown}
+See [-@sec-lorem-ipsum-this].
+```
+
+to get
+
+See [-@sec-lorem-ipsum-this].
+
+### To have another CR prefix
+
+To have another prefix and choose a momentary one at will, such as 'Chapter' or 'Appendix', you must put the reference to the CR in square brackets, preceded by the prefix you have chosen (in this example it is 'Chapter'):
+
+```{.markdown}
+See [Chapter @sec-lorem-ipsum-this] for more details on visualizing model diagnostics.
+```
+
+to get
+
+See [Chapter @sec-lorem-ipsum-this] for more details on visualizing model diagnostics.
+
+::: {.callout-note}
+In this example I have not inserted `-`, because it is not needed.
+:::
