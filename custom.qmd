@@ -1,0 +1,30 @@
+---
+format:
+  html:
+    toc: false
+    page-layout: custom
+page-navigation: false
+execute:
+  freeze: false
+---
+
+::: {.content-block}
+
+# Custom {.unnumbered}
+
+::: {.grid}
+
+
+::: {.g-col-6}
+This column takes 1/2 of the page
+:::
+
+::: {.g-col-6}
+This column takes 1/2 of the page
+:::
+
+:::
+
+:::
+
+

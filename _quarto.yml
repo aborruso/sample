@@ -13,11 +13,19 @@ book:
     - part: Ipsum
       chapters:
         - cr.qmd
-        - summary.qmd
         - references.qmd
+    - part: Custom
+      chapters:
+        - custom.qmd
+
+  repo-url: https://github.com/aborruso/sample
+  repo-branch: main
+  repo-actions: [edit, issue]
 
 bibliography: references.bib
 
 format:
   html:
-    theme: cosmo
+    theme:
+      - cosmo
+      - styles.scss
