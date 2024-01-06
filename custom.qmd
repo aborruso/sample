@@ -1,4 +1,5 @@
 ---
+title: A title
 format:
   html:
     toc: false
@@ -10,7 +11,7 @@ execute:
 
 ::: {.content-block}
 
-# Custom {.unnumbered}
+## Custom {.unnumbered}
 
 ::: {.grid}
 
