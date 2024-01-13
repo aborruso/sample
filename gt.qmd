@@ -10,8 +10,6 @@ lang: "en"
 
 from great_tables import GT, md, html
 import duckdb
-from IPython.display import Markdown
-import pandas as pd
 
 query= """
   SELECT * FROM read_csv_auto('resources/gt_input.csv')
