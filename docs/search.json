@@ -26,7 +26,7 @@
     "href": "gt.html",
     "title": "2  GT",
     "section": "",
-    "text": "2.1 Rendered by GT\nCode\nfrom great_tables import GT, md, html\nimport duckdb\nfrom IPython.display import Markdown\nimport pandas as pd\n\nquery= \"\"\"\n  SELECT * FROM read_csv_auto('resources/gt_input.csv')\n  \"\"\"\n\ntable = duckdb.query(query).df()\n\nGT(table,locale=\"it-IT\",rowname_col=\"Cat\")\n\n\n\n\n\n\n\n\n\nField 1\nField 2\nField 3\n\n\n\n\nA\nLorem\n12\n2535.26\n\n\nB\nIpsum\n50\n235.89\n\n\nC\nSolat\n21\n5789.56",
+    "text": "2.1 Rendered by GT\nCode\nfrom great_tables import GT, md, html\nimport duckdb\nfrom IPython.display import Markdown\nimport pandas as pd\n\nquery= \"\"\"\n  SELECT * FROM read_csv_auto('resources/gt_input.csv')\n  \"\"\"\n\ntable = duckdb.query(query).df()\n\nGT(table,locale=\"it-IT\",rowname_col=\"Cat\")\n\n\n\n\n\n\n\n\n\nField 1\nField 2\nField 3\n\n\n\n\nA\nLorem\n1236\n2535.26\n\n\nB\nIpsum\n50478\n235.89\n\n\nC\nSolat\n2521\n5789.56",
     "crumbs": [
       "Ipsum",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>GT</span>"
@@ -37,7 +37,7 @@
     "href": "gt.html#native-dataframe-rendering",
     "title": "2  GT",
     "section": "2.2 Native dataframe rendering",
-    "text": "2.2 Native dataframe rendering\n\n\nCode\ntable\n\n\n\n\n\n\n\n\n\nCat\nField 1\nField 2\nField 3\n\n\n\n\n0\nA\nLorem\n12\n2535.26\n\n\n1\nB\nIpsum\n50\n235.89\n\n\n2\nC\nSolat\n21\n5789.56",
+    "text": "2.2 Native dataframe rendering\n\n\nCode\ntable\n\n\n\n\n\n\n\n\n\nCat\nField 1\nField 2\nField 3\n\n\n\n\n0\nA\nLorem\n1236\n2535.26\n\n\n1\nB\nIpsum\n50478\n235.89\n\n\n2\nC\nSolat\n2521\n5789.56",
     "crumbs": [
       "Ipsum",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>GT</span>"
