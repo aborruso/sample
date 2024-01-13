@@ -1,0 +1,46 @@
+[
+  {
+    "objectID": "intro.html",
+    "href": "intro.html",
+    "title": "1  Introduction",
+    "section": "",
+    "text": "1.1 Lorem Ipsum",
+    "crumbs": [
+      "Lorem",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "cr.html",
+    "href": "cr.html",
+    "title": "3  CR",
+    "section": "",
+    "text": "3.1 Sample section\nThis section is associated with #sec-lorem-ipsum-this label.",
+    "crumbs": [
+      "Ipsum",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>CR</span>"
+    ]
+  },
+  {
+    "objectID": "cr.html#sec-lorem-ipsum-this",
+    "href": "cr.html#sec-lorem-ipsum-this",
+    "title": "3  CR",
+    "section": "",
+    "text": "3.1.1 Suppress cross-reference prefix\nIf write see @sec-lorem-ipsum-this it will produce “see Section 3.1”.\nTo suppress cross-reference prefix prepend - before @, like so [-@citation], will suppress default prefix, e.g. [-@sec-lorem-ipsum-this] will produce just 2.1 (or whatever number this section happens to be) without Section prefix:\nSee [-@sec-lorem-ipsum-this].\nto get\nSee 3.1.\n\n\n3.1.2 To have another CR prefix\nTo have another prefix and choose a momentary one at will, such as ‘Chapter’ or ‘Appendix’, you must put the reference to the CR in square brackets, preceded by the prefix you have chosen (in this example it is ‘Chapter’):\nSee [Chapter @sec-lorem-ipsum-this] for more details on visualizing model diagnostics.\nto get\nSee Chapter 3.1 for more details on visualizing model diagnostics.\n\n\n\n\n\n\nNote\n\n\n\nIn this example I have not inserted -, because it is not needed.",
+    "crumbs": [
+      "Ipsum",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>CR</span>"
+    ]
+  },
+  {
+    "objectID": "custom.html#custom",
+    "href": "custom.html#custom",
+    "title": "4  A title",
+    "section": "Custom",
+    "text": "Custom\n\n\nThis column takes 1/2 of the page\n\n\nThis column takes 1/2 of the page",
+    "crumbs": [
+      "Custom",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>A title</span>"
+    ]
+  }
+]
