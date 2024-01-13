@@ -1,0 +1,30 @@
+---
+title: "GT"
+lang: "en"
+---
+
+## Rendered by GT
+
+```{python}
+#| code-fold: true
+
+from great_tables import GT, md, html
+import duckdb
+from IPython.display import Markdown
+import pandas as pd
+
+query= """
+  SELECT * FROM read_csv_auto('resources/gt_input.csv')
+  """
+
+table = duckdb.query(query).df()
+
+GT(table,locale="it-IT",rowname_col="Cat")
+```
+
+## Native dataframe rendering
+
+```{python}
+#| code-fold: true
+table
+```
