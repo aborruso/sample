@@ -1,5 +1,6 @@
 project:
   type: book
+  output-dir: docs
 
 book:
   title: "Sample"
@@ -12,8 +13,8 @@ book:
         - intro.qmd
     - part: Ipsum
       chapters:
+        - gt.qmd
         - cr.qmd
-        - references.qmd
     - part: Custom
       chapters:
         - custom.qmd
@@ -21,8 +22,6 @@ book:
   repo-url: https://github.com/aborruso/sample
   repo-branch: main
   repo-actions: [edit, issue]
-
-bibliography: references.bib
 
 format:
   html:
