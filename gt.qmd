@@ -26,3 +26,13 @@ GT(table,locale="it-IT",rowname_col="Cat")
 #| code-fold: true
 table
 ```
+
+
+```{python}
+#| code-fold: true
+from great_tables import GT, md, html
+import pandas as pd
+df = pd.read_csv('./resources/gt_input.csv')
+
+GT(df,locale="it-IT")
+```
