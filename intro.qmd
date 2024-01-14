@@ -10,6 +10,6 @@ page-navigation: false
 
 This is a book created from markdown and executable code.
 
-See @knuth84 for additional discussion of literate programming.
+See it for additional discussion of literate programming.
 
 ## Lorem Ipsum {#sec-lorem-ipsum}

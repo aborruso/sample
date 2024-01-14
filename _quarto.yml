@@ -29,3 +29,7 @@ format:
     theme:
       - cosmo
       - styles.scss
+
+execute:
+  daemon: false
+  freeze: auto
