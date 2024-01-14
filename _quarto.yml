@@ -2,6 +2,8 @@ project:
   type: book
   output-dir: docs
   resources: "resources/gt_input.csv"
+  render:
+  - "!note.md"
 
 book:
   title: "Sample"
