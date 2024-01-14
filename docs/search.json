@@ -4,7 +4,40 @@
     "href": "index.html",
     "title": "Sample",
     "section": "",
-    "text": "Preface\nThis is a Quarto book.\nTo learn more about Quarto books visit https://quarto.org/docs/books.",
+    "text": "Preface\nThis is a Quarto book.",
+    "crumbs": [
+      "Lorem",
+      "Preface"
+    ]
+  },
+  {
+    "objectID": "index.html#standard-python-df-rendering",
+    "href": "index.html#standard-python-df-rendering",
+    "title": "Sample",
+    "section": "Standard Python df rendering",
+    "text": "Standard Python df rendering\n\n\nCode\nimport pandas as pd\ndf = pd.read_csv('./resources/gt_input.csv')\n\ndf\n\n\n\n\n\n\n\n\n\nCat\nField 1\nField 2\nField 3\n\n\n\n\n0\nA\nLorem\n1236\n2535.26\n\n\n1\nB\nIpsum\n50478\n235.89\n\n\n2\nC\nSolat\n2521\n5789.56",
+    "crumbs": [
+      "Lorem",
+      "Preface"
+    ]
+  },
+  {
+    "objectID": "index.html#rendering-applying-some-function-and-style",
+    "href": "index.html#rendering-applying-some-function-and-style",
+    "title": "Sample",
+    "section": "Rendering applying some function and style",
+    "text": "Rendering applying some function and style\n\n\nCode\nimport pandas as pd\n\n# Function for formatting numbers in Italian format\ndef italian_format(x):\n    if isinstance(x, float):\n        return \"{:,.2f}\".format(x).replace(\",\", \"X\").replace(\".\", \",\").replace(\"X\", \".\")\n    elif isinstance(x, int):\n        return \"{:,}\".format(x).replace(\",\", \".\")\n    else:\n        return x\n\n# To check if column is numeric\ndef is_numeric_column(col):\n    return pd.api.types.is_numeric_dtype(col)\n\n# To have Italian format for numbers and right alignment\ndef apply_italian_style(df):\n    styled_df = df.style.format(italian_format).hide(axis=\"index\")\n    styled_df = styled_df.apply(lambda x: [\"text-align: right\" if is_numeric_column(df[x.name]) else \"\" for i in x], axis=0)\n    return styled_df\n\n# sample dataframe\ndf = pd.read_csv('./resources/gt_input.csv')\n\nstyled_df = apply_italian_style(df)\nstyled_df\n\n\n\n\n\n\n\nCat\nField 1\nField 2\nField 3\n\n\n\n\nA\nLorem\n1.236\n2.535,26\n\n\nB\nIpsum\n50.478\n235,89\n\n\nC\nSolat\n2.521\n5.789,56",
+    "crumbs": [
+      "Lorem",
+      "Preface"
+    ]
+  },
+  {
+    "objectID": "index.html#observable-table",
+    "href": "index.html#observable-table",
+    "title": "Sample",
+    "section": "Observable table",
+    "text": "Observable table\n\n\nCode\ndata = FileAttachment(\"resources/gt_input.csv\").csv({ typed: true })\nInputs.table(data,{ locale: \"it-IT\" })",
     "crumbs": [
       "Lorem",
       "Preface"

@@ -1,6 +1,7 @@
 project:
   type: book
   output-dir: docs
+  resources: "resources/gt_input.csv"
 
 book:
   title: "Sample"
