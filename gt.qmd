@@ -17,7 +17,7 @@ query= """
 
 table = duckdb.query(query).df()
 
-GT(table,locale="it-IT",rowname_col="Cat")
+GT(table,rowname_col="Cat", locale="it-IT").fmt_number(columns="Field 2")
 ```
 
 ## Native dataframe rendering

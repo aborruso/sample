@@ -14,6 +14,7 @@ book:
       chapters:
         - index.qmd
         - intro.qmd
+        - text.md
     - part: Ipsum
       chapters:
         - gt.qmd
@@ -26,8 +27,12 @@ book:
   repo-branch: main
   repo-actions: [edit, issue]
 
+website:
+  back-to-top-navigation: true
+
 format:
   html:
+#    lang: "it-IT"
     theme:
       - cosmo
       - styles.scss
