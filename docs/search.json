@@ -1,5 +1,38 @@
 [
   {
+    "objectID": "text.html",
+    "href": "text.html",
+    "title": "2  Lorem",
+    "section": "",
+    "text": "2.1 Ipsum",
+    "crumbs": [
+      "Lorem",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Lorem</span>"
+    ]
+  },
+  {
+    "objectID": "text.html#ipsum",
+    "href": "text.html#ipsum",
+    "title": "2  Lorem",
+    "section": "",
+    "text": "Est culpa aliquip culpa in adipisicing laborum. Enim proident sint occaecat ad sint. Aliqua nostrud elit adipisicing occaecat veniam. Labore velit ullamco nulla esse esse ullamco minim quis do nisi proident consequat ipsum. Aute pariatur cillum magna Lorem. Qui quis ullamco occaecat consequat reprehenderit deserunt mollit sint. Commodo fugiat nulla exercitation veniam.\nIn id et commodo Lorem amet. Deserunt nisi labore tempor occaecat commodo commodo magna. Veniam do esse dolor non ut ad occaecat dolore reprehenderit nostrud reprehenderit adipisicing veniam. Eu velit aute aliquip eiusmod consequat. Voluptate ea fugiat voluptate ut voluptate eiusmod reprehenderit sint non do.\nReprehenderit dolore reprehenderit excepteur dolore. Do aliqua aute id id anim pariatur voluptate aliquip deserunt velit. Cupidatat qui nulla ea nisi. Esse in sint ipsum eiusmod. Laborum aliqua voluptate ullamco occaecat nulla et excepteur nulla.\nQui laboris reprehenderit magna nisi sint consequat. Exercitation qui id qui magna velit ipsum nisi quis consequat culpa elit laborum ea. Elit et deserunt esse cupidatat labore mollit do aute. Enim consectetur officia cillum dolore. Exercitation occaecat proident labore sunt ea nulla velit est exercitation voluptate et.\nQuis mollit nostrud irure do. Occaecat cupidatat ad aute Lorem laborum quis aliqua. Ad nostrud ad enim cupidatat consequat id. Proident sint proident irure eiusmod incididunt in sunt pariatur. Magna ex et Lorem mollit nisi eu labore id ut consectetur dolore.\nLabore ullamco ad nulla consectetur. Dolor exercitation sunt do aliquip minim adipisicing aliquip aliquip enim esse fugiat aliqua. Deserunt dolore eiusmod proident quis esse. In sunt velit dolore occaecat qui fugiat sunt minim aute excepteur eiusmod voluptate culpa fugiat. Pariatur mollit veniam eu tempor incididunt nostrud pariatur non tempor ullamco aute enim. Est tempor laborum elit excepteur magna irure proident exercitation.\nOccaecat id aliquip deserunt anim. Velit labore minim velit ea amet quis fugiat incididunt duis occaecat ullamco. Ea culpa labore aliqua laboris consectetur voluptate aute veniam cupidatat consectetur sunt sint. Officia aute ex nulla ea magna quis labore sint ipsum. Culpa incididunt et exercitation cillum est cupidatat mollit incididunt. Ea nostrud sit voluptate ad commodo sunt fugiat cillum ea quis Lorem veniam.",
+    "crumbs": [
+      "Lorem",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Lorem</span>"
+    ]
+  },
+  {
+    "objectID": "text.html#dolor",
+    "href": "text.html#dolor",
+    "title": "2  Lorem",
+    "section": "2.2 Dolor",
+    "text": "2.2 Dolor\nVelit quis laboris qui et eu. Reprehenderit Lorem ex laboris et dolor non fugiat non officia reprehenderit nisi. Do dolor Lorem laborum dolor ullamco labore. Dolore quis enim voluptate cillum exercitation. Reprehenderit non reprehenderit tempor ex ipsum. Quis amet commodo in consequat mollit laborum est. Culpa enim deserunt dolor dolor do.\nConsequat in exercitation in irure consequat minim et et qui irure laborum anim consectetur. Magna irure adipisicing nulla et ex ut occaecat. Aliquip Lorem pariatur proident aliquip nostrud tempor ipsum id.\nNulla excepteur in ad est ad sunt consequat aliqua voluptate ex. Tempor in in ex deserunt. Incididunt anim minim exercitation sit do amet anim non nisi laboris in eiusmod. Culpa tempor veniam sunt velit non. Id fugiat commodo quis proident ullamco aliquip ullamco sint. Veniam ex non deserunt adipisicing minim consectetur Lorem ipsum. Veniam commodo qui proident aliqua commodo amet ex in cillum anim incididunt amet nostrud tempor.",
+    "crumbs": [
+      "Lorem",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Lorem</span>"
+    ]
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Sample",
@@ -37,7 +70,18 @@
     "href": "index.html#observable-table",
     "title": "Sample",
     "section": "Observable table",
-    "text": "Observable table\n\n\nCode\ndata = FileAttachment(\"resources/gt_input.csv\").csv({ typed: true })\nInputs.table(data,{ locale: \"it-IT\" })",
+    "text": "Observable table\n\n\nCode\ndata = FileAttachment(\"resources/gt_input.csv\").csv({ typed: true })\nInputs.table(data,{ locale: \"it-IT\" })\n\n\n\n\nTable 1: Table from Observable\n\n\n\n\n\n\n(a)\n\n\n\n\n\n\n\n\n\n\n\n\n\n(b)",
+    "crumbs": [
+      "Lorem",
+      "Preface"
+    ]
+  },
+  {
+    "objectID": "index.html#html-table",
+    "href": "index.html#html-table",
+    "title": "Sample",
+    "section": "HTML table",
+    "text": "HTML table\nIf you want to add a caption to an HTML table, you can put the table in a div and assign it a label (below it’s #tbl-html), and finally insert the caption after the table. If you want to add a bootstrap class, just do it in the HTML itself. Below is an example with both applied.\n\n\n\nTable 2: My html table caption\n\n\n\n\n\nName\nAge\n\n\nJohn Doe\n30\n\n\nJane Smith\n25\n\n\nEmily Johnson\n40",
     "crumbs": [
       "Lorem",
       "Preface"
@@ -57,56 +101,56 @@
   {
     "objectID": "gt.html",
     "href": "gt.html",
-    "title": "2  GT",
+    "title": "3  GT",
     "section": "",
-    "text": "2.1 Rendered by GT\nCode\nfrom great_tables import GT, md, html\nimport duckdb\n\nquery= \"\"\"\n  SELECT * FROM read_csv_auto('resources/gt_input.csv')\n  \"\"\"\n\ntable = duckdb.query(query).df()\n\nGT(table,locale=\"it-IT\",rowname_col=\"Cat\")\n\n\n\n\n\n\n\n\n\nField 1\nField 2\nField 3\n\n\n\n\nA\nLorem\n1236\n2535.26\n\n\nB\nIpsum\n50478\n235.89\n\n\nC\nSolat\n2521\n5789.56569",
+    "text": "3.1 Rendered by GT\nCode\nfrom great_tables import GT, md, html\nimport duckdb\n\nquery= \"\"\"\n  SELECT * FROM read_csv_auto('resources/gt_input.csv')\n  \"\"\"\n\ntable = duckdb.query(query).df()\n\nGT(table,rowname_col=\"Cat\", locale=\"it-IT\").fmt_number(columns=\"Field 2\")\n\n\n\n\n\n\n\n\n\nField 1\nField 2\nField 3\n\n\n\n\nA\nLorem\n1.236,00\n2535.26\n\n\nB\nIpsum\n50.478,00\n235.89\n\n\nC\nSolat\n2.521,00\n5789.56569",
     "crumbs": [
       "Ipsum",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>GT</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>GT</span>"
     ]
   },
   {
     "objectID": "gt.html#native-dataframe-rendering",
     "href": "gt.html#native-dataframe-rendering",
-    "title": "2  GT",
-    "section": "2.2 Native dataframe rendering",
-    "text": "2.2 Native dataframe rendering\n\n\nCode\ntable\n\n\n\n\n\n\n\n\n\nCat\nField 1\nField 2\nField 3\n\n\n\n\n0\nA\nLorem\n1236\n2535.26000\n\n\n1\nB\nIpsum\n50478\n235.89000\n\n\n2\nC\nSolat\n2521\n5789.56569\n\n\n\n\n\n\n\n\n\nCode\nfrom great_tables import GT, md, html\nimport pandas as pd\ndf = pd.read_csv('./resources/gt_input.csv')\n\nGT(df,locale=\"it-IT\")\n\n\n\n\n\n\n\n\nCat\nField 1\nField 2\nField 3\n\n\n\n\nA\nLorem\n1236\n2535.26\n\n\nB\nIpsum\n50478\n235.89\n\n\nC\nSolat\n2521\n5789.56569",
+    "title": "3  GT",
+    "section": "3.2 Native dataframe rendering",
+    "text": "3.2 Native dataframe rendering\n\n\nCode\ntable\n\n\n\n\n\n\n\n\n\nCat\nField 1\nField 2\nField 3\n\n\n\n\n0\nA\nLorem\n1236\n2535.26000\n\n\n1\nB\nIpsum\n50478\n235.89000\n\n\n2\nC\nSolat\n2521\n5789.56569\n\n\n\n\n\n\n\n\n\nCode\nfrom great_tables import GT, md, html\nimport pandas as pd\ndf = pd.read_csv('./resources/gt_input.csv')\n\nGT(df,locale=\"it-IT\")\n\n\n\n\n\n\n\n\nCat\nField 1\nField 2\nField 3\n\n\n\n\nA\nLorem\n1236\n2535.26\n\n\nB\nIpsum\n50478\n235.89\n\n\nC\nSolat\n2521\n5789.56569",
     "crumbs": [
       "Ipsum",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>GT</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>GT</span>"
     ]
   },
   {
     "objectID": "cr.html",
     "href": "cr.html",
-    "title": "3  CR",
+    "title": "4  CR",
     "section": "",
-    "text": "3.1 Sample section\nThis section is associated with #sec-lorem-ipsum-this label.",
+    "text": "4.1 Sample section\nThis section is associated with #sec-lorem-ipsum-this label.",
     "crumbs": [
       "Ipsum",
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>CR</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>CR</span>"
     ]
   },
   {
     "objectID": "cr.html#sec-lorem-ipsum-this",
     "href": "cr.html#sec-lorem-ipsum-this",
-    "title": "3  CR",
+    "title": "4  CR",
     "section": "",
-    "text": "3.1.1 Suppress cross-reference prefix\nIf write see @sec-lorem-ipsum-this it will produce “see Section 3.1”.\nTo suppress cross-reference prefix prepend - before @, like so [-@citation], will suppress default prefix, e.g. [-@sec-lorem-ipsum-this] will produce just 2.1 (or whatever number this section happens to be) without Section prefix:\nSee [-@sec-lorem-ipsum-this].\nto get\nSee 3.1.\n\n\n3.1.2 To have another CR prefix\nTo have another prefix and choose a momentary one at will, such as ‘Chapter’ or ‘Appendix’, you must put the reference to the CR in square brackets, preceded by the prefix you have chosen (in this example it is ‘Chapter’):\nSee [Chapter @sec-lorem-ipsum-this] for more details on visualizing model diagnostics.\nto get\nSee Chapter 3.1 for more details on visualizing model diagnostics.\n\n\n\n\n\n\nNote\n\n\n\nIn this example I have not inserted -, because it is not needed.",
+    "text": "4.1.1 Suppress cross-reference prefix\nIf write see @sec-lorem-ipsum-this it will produce “see Section 4.1”.\nTo suppress cross-reference prefix prepend - before @, like so [-@citation], will suppress default prefix, e.g. [-@sec-lorem-ipsum-this] will produce just 2.1 (or whatever number this section happens to be) without Section prefix:\nSee [-@sec-lorem-ipsum-this].\nto get\nSee 4.1.\n\n\n4.1.2 To have another CR prefix\nTo have another prefix and choose a momentary one at will, such as ‘Chapter’ or ‘Appendix’, you must put the reference to the CR in square brackets, preceded by the prefix you have chosen (in this example it is ‘Chapter’):\nSee [Chapter @sec-lorem-ipsum-this] for more details on visualizing model diagnostics.\nto get\nSee Chapter 4.1 for more details on visualizing model diagnostics.\n\n\n\n\n\n\nNote\n\n\n\nIn this example I have not inserted -, because it is not needed.",
     "crumbs": [
       "Ipsum",
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>CR</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>CR</span>"
     ]
   },
   {
     "objectID": "custom.html#custom",
     "href": "custom.html#custom",
-    "title": "4  A title",
+    "title": "5  A title",
     "section": "Custom",
     "text": "Custom\n\n\nThis column takes 1/2 of the page\n\n\nThis column takes 1/2 of the page",
     "crumbs": [
       "Custom",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>A title</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>A title</span>"
     ]
   }
 ]
